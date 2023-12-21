@@ -27,6 +27,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+          'example_nav_to_pose = lab08_pkg.example_nav_to_pose:main',
+          'example_nav_through_poses = lab08_pkg.example_nav_through_poses:main',
         ],
     },
 )
