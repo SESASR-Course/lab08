@@ -36,7 +36,12 @@ def main():
     navigator.waitUntilNav2Active()
 
     # Go to our demos first goal pose
-    goal_pose = [1.68, 0.5, pi/2] # x, y, yaw
+    ################################################
+    #
+    # Set your goal pose here!
+    #
+    ################################################
+    
     # sanity check a valid path exists
     # path = navigator.getPath(initial_pose, goal_pose)
 
@@ -44,12 +49,6 @@ def main():
 
     i = 0
     while not navigator.isTaskComplete():
-        ################################################
-        #
-        # Implement some code here for your application!
-        #
-        ################################################
-
         # Do something with the feedback
         i = i + 1
         feedback = navigator.getFeedback()

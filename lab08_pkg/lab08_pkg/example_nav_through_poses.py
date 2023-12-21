@@ -38,10 +38,12 @@ def main():
 
     # Go to our demos first goal pose
     goal_poses = []
-    goal_poses.append([-0.5718, -0.56, 0.0]) # x, y, yaw
-    goal_poses.append([1.803, -1.66, pi/2]) # x, y, yaw
-    goal_poses.append([-0.0, 1.99, pi]) # x, y, yaw
-    goal_poses.append([-1.715, 1.031, -pi/6]) # x, y, yaw
+    
+    ################################################
+    #
+    # Append your goal poses here!
+    #
+    ################################################
 
     # transform goal poses to pose stamped
     goal_poses = [array_to_pose_stamped(goal_pose) for goal_pose in goal_poses]
